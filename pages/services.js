@@ -15,8 +15,6 @@ import { Bar } from 'react-chartjs-2';
 import ChartDataLabels from 'chartjs-plugin-datalabels';
 ChartJS.register(BarElement, CategoryScale, LinearScale, Tooltip, Legend, ChartDataLabels);
 
-import dynamic from 'next/dynamic';
-const GrantTabs = dynamic(() => import('../components/services/GrantTabs'), { ssr: false });
 
 export default function Services() {
   const { locale } = useRouter();
@@ -566,6 +564,8 @@ export default function Services() {
     </div>
 
       </div> {/* close main wrapper div */}
+
+      {/* <GrantTabs /> was here, removed as requested */}
 
       <div
         className="relative max-w-4xl mx-auto h-[280px] text-white rounded-xl shadow-lg overflow-hidden mt-6 px-6"
