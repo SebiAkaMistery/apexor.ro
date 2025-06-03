@@ -73,11 +73,11 @@ export default function Home() {
             className="w-[35vw] max-w-[180px] h-auto mb-20 sm:mb-40 lg:mb-64 object-contain"
           />
           <h1 className="text-2xl md:text-4xl font-bold mb-4 text-white max-w-xl">
-            {t('home_title')}
+            Apexor - Soluții inovatoare pentru un viitor sustenabil
           </h1>
           <hr className="w-[60%] max-w-xl border-t border-white opacity-50 mb-4 mx-auto" />
           <p className="text-base md:text-lg max-w-xl text-white">
-            {t('home_description')}
+            Soluții inovatoare în domeniul energiei, cercetării și dezvoltării pentru a sprijini tranziția către un viitor sustenabil.
           </p>
           <motion.div
             className="mt-10"
