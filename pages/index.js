@@ -6,7 +6,6 @@ import Head from 'next/head';
 import { useRouter } from 'next/router';
 import Navbar from '../components/Navbar';
 import Image from 'next/image';
-import Footer from '../components/footer';
 import dynamic from 'next/dynamic';
 const MotionDiv = dynamic(() =>
   import('framer-motion').then(mod => mod.motion.div), { ssr: false }
@@ -160,8 +159,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <Footer />
-      </>
+             </>
     </Layout>
   );
 }
