@@ -78,10 +78,10 @@ export default function Home() {
           <Image
             src="/favicon-white.webp"
             alt="Apexor logo"
-            width={200}
-            height={200}
-            className="w-[50vw] max-w-[300px] h-auto mb-24 sm:mb-48 lg:mb-64 object-contain"
+            width={180}
+            height={180}
             priority
+            className="w-[35vw] max-w-[180px] h-auto mb-20 sm:mb-40 lg:mb-64 object-contain"
           />
           <h1 className="text-2xl md:text-4xl font-bold mb-4 text-white max-w-xl">
             {t('home_title')}
