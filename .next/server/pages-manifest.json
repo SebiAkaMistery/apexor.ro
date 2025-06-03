@@ -1,0 +1,11 @@
+{
+  "/_app": "pages/_app.js",
+  "/_error": "pages/_error.js",
+  "/_document": "pages/_document.js",
+  "/": "pages/index.js",
+  "/services": "pages/services.js",
+  "/about": "pages/about.js",
+  "/contact": "pages/contact.js",
+  "/electric-up2": "pages/electric-up2.js",
+  "/fondul-modernizare-autoconsum": "pages/fondul-modernizare-autoconsum.js"
+}
