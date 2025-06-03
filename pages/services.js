@@ -15,6 +15,9 @@ import { Bar } from 'react-chartjs-2';
 import ChartDataLabels from 'chartjs-plugin-datalabels';
 ChartJS.register(BarElement, CategoryScale, LinearScale, Tooltip, Legend, ChartDataLabels);
 
+import dynamic from 'next/dynamic';
+const GrantTabs = dynamic(() => import('../components/services/GrantTabs'), { ssr: false });
+
 export default function Services() {
   const { locale } = useRouter();
   const [isModalOpen, setModalOpen] = useState(false);

@@ -54,7 +54,7 @@ export default function Home() {
         >
           <Navbar />
         </MotionDiv>
-        <div className="relative h-screen overflow-hidden">
+        <div className="relative min-h-[100dvh] overflow-hidden">
           <video
             className="absolute top-0 left-0 w-full h-full object-cover opacity-100"
             autoPlay

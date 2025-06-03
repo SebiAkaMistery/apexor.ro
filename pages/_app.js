@@ -5,6 +5,7 @@ import { useEffect } from 'react';
 const Layout = dynamic(() => import('../components/Layout'), { ssr: false });
 import { useRouter } from 'next/router';
 import Head from 'next/head';
+import Script from 'next/script';
 import localFont from 'next/font/local';
 import ScrollIndicator from '../components/ScrollIndicator';
 
@@ -64,15 +65,13 @@ function MyApp({ Component, pageProps }) {
       })(window,document,'script','dataLayer','GTM-NXZTWS4T');`,
             }}
           />
-
           {/* Cookiebot Consent Banner */}
-          <script
+          <Script
             id="Cookiebot"
             src="https://consent.cookiebot.com/uc.js"
             data-cbid="a33c7fe7-e4d0-40cb-bb0e-66b549a1b4f6"
-            type="text/javascript"
-            async
-          ></script>
+            strategy="lazyOnload"
+          />
         </Head>
         {isHome ? (
           <>
