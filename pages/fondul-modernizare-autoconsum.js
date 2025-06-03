@@ -18,7 +18,7 @@ ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend)
 
 const Bar = dynamic(() => import('react-chartjs-2').then(mod => mod.Bar), { ssr: false });
 
-export default function FondulModernizareAutoconsum() {
+const FondulModernizareAutoconsum = () => {
   const { locale } = useRouter();
   const [isContactOpen, setIsContactOpen] = useState(false);
 
@@ -1283,3 +1283,4 @@ function customStorageRoundup(value) {
     </>
   );
 }
+export default FondulModernizareAutoconsum;

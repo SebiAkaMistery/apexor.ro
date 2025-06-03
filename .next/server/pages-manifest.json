@@ -1,11 +1,21 @@
 {
-  "/_app": "pages/_app.js",
-  "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/": "pages/index.js",
-  "/services": "pages/services.js",
+  "/_error": "pages/_error.js",
+  "/_app": "pages/_app.js",
+  "/api/newsletter": "pages/api/newsletter.js",
+  "/api/contact": "pages/api/contact.js",
   "/about": "pages/about.js",
+  "/": "pages/index.js",
   "/contact": "pages/contact.js",
-  "/electric-up2": "pages/electric-up2.js",
-  "/fondul-modernizare-autoconsum": "pages/fondul-modernizare-autoconsum.js"
+  "/granturi-green": "pages/granturi-green.js",
+  "/politica-confidentialitate": "pages/politica-confidentialitate.js",
+  "/services": "pages/services.js",
+  "/ro/404": "pages/ro/404.html",
+  "/en/404": "pages/en/404.html",
+  "/ro/500": "pages/ro/500.html",
+  "/en/500": "pages/en/500.html",
+  "/ro/electric-up2": "pages/ro/electric-up2.html",
+  "/en/electric-up2": "pages/en/electric-up2.html",
+  "/ro/fondul-modernizare-autoconsum": "pages/ro/fondul-modernizare-autoconsum.html",
+  "/en/fondul-modernizare-autoconsum": "pages/en/fondul-modernizare-autoconsum.html"
 }

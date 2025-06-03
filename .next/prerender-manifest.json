@@ -1,0 +1,38 @@
+{
+  "version": 4,
+  "routes": {
+    "/ro/politica-confidentialitate": {
+      "initialRevalidateSeconds": false,
+      "srcRoute": null,
+      "dataRoute": "/_next/data/uYMk9pZwg6wiRBQkw6HQ-/politica-confidentialitate.json",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/en/politica-confidentialitate": {
+      "initialRevalidateSeconds": false,
+      "srcRoute": null,
+      "dataRoute": "/_next/data/uYMk9pZwg6wiRBQkw6HQ-/politica-confidentialitate.json",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    }
+  },
+  "dynamicRoutes": {},
+  "notFoundRoutes": [],
+  "preview": {
+    "previewModeId": "c938dfbd3fedc62d0ecc615b034160dc",
+    "previewModeSigningKey": "ad3388f88b892684e6136cc21d3a0f1e9e52c013cedb058c24028d1f36885555",
+    "previewModeEncryptionKey": "000e57ba02f3045bd149d32fd165fe51a39a99ccd5d406035d082939707b4201"
+  }
+}

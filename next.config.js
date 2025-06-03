@@ -6,6 +6,9 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 module.exports = withBundleAnalyzer({
   i18n,
   reactStrictMode: true,
+  experimental: {
+    optimizePackageImports: true,
+  },
   async headers() {
     return [
       {

@@ -1,13 +1,16 @@
 import Layout from '../components/Layout';
 import { useTranslation } from 'next-i18next';
 import Link from 'next/link';
-import { motion } from 'framer-motion';
 import { useEffect } from 'react';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 import Navbar from '../components/Navbar';
 import Image from 'next/image';
 import Footer from '../components/footer';
+import dynamic from 'next/dynamic';
+const MotionDiv = dynamic(() =>
+  import('framer-motion').then(mod => mod.motion.div), { ssr: false }
+);
 
 export default function Home() {
   const { t, i18n } = useTranslation('common');
@@ -43,14 +46,14 @@ export default function Home() {
           <meta name="robots" content="index, follow" />
           <link rel="canonical" href="https://apexor.ro/" />
         </Head>
-        <motion.div
+        <MotionDiv
           className="w-full px-4 sm:px-6 lg:px-8"
           initial={{ y: -80, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.6 }}
         >
           <Navbar />
-        </motion.div>
+        </MotionDiv>
         <div className="relative h-screen overflow-hidden">
           <video
             className="absolute top-0 left-0 w-full h-full object-cover opacity-100"
@@ -79,7 +82,7 @@ export default function Home() {
           <p className="text-base md:text-lg max-w-xl text-white">
             Soluții inovatoare în domeniul energiei, cercetării și dezvoltării pentru a sprijini tranziția către un viitor sustenabil.
           </p>
-          <motion.div
+          <MotionDiv
             className="mt-10"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -91,7 +94,7 @@ export default function Home() {
             >
               {t('homepage_services_cta', { defaultValue: 'Descoperă serviciile noastre' })}
             </Link>
-          </motion.div>
+          </MotionDiv>
         </div>
         </div>
         {/* Oportunități de finanțare section */}
