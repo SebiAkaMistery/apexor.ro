@@ -69,7 +69,9 @@ function MyApp({ Component, pageProps }) {
           <Script
             id="Cookiebot"
             src="https://consent.cookiebot.com/uc.js"
-            data-cbid="a33c7fe7-e4d0-40cb-bb0e-66b549a1b4f6"
+            data-cbid="8250585a-82df-461d-beee-12481911ff5f"
+            data-blockingmode="auto"
+            type="text/javascript"
             strategy="lazyOnload"
           />
         </Head>
