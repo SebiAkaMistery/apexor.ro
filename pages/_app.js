@@ -46,16 +46,14 @@ function MyApp({ Component, pageProps }) {
           <link rel="canonical" href={`https://apexor.ro${router.asPath}`} />
           <link rel="icon" href="/favicon.ico" type="image/x-icon" />
 
-          {/* Google Ads Conversion Tracking */}
-          <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17121530553"></script>
+          {/* Google Tag Manager */}
           <script
             dangerouslySetInnerHTML={{
-              __html: `
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments);}
-                gtag('js', new Date());
-                gtag('config', 'AW-17121530553');
-              `,
+              __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-NXZTWS4T');`,
             }}
           />
 
@@ -78,6 +76,14 @@ function MyApp({ Component, pageProps }) {
             {!isHome && <ScrollIndicator />}
           </Layout>
         )}
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-NXZTWS4T"
+            height="0"
+            width="0"
+            style={{ display: 'none', visibility: 'hidden' }}
+          ></iframe>
+        </noscript>
       </>
     </div>
   );
