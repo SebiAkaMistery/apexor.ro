@@ -76,8 +76,8 @@ export default function Services() {
       },
       image: '/icons/eficienta-energetica.svg',
       content: {
-        ro: "Consultanță completă pentru optimizarea consumului energetic, soluții de producție regenerabilă (PV + BESS), intermediere de proiecte și avizare ANRE.\n\n• Proiecte fotovoltaice on-grid / off-grid\n• Sisteme de stocare (BESS) și integrare hibridă\n• Documentații de specialitate în relația cu Operatorii de Distribuție\n• Documentație și obținere atestate ANRE operatori economici\n• Structurare și negociere PPA (Power Purchase Agreements)\n• Consultanță pentru prosumatori (clienți casnici sau industriali)\n• Audit energetic și simulări de eficiență energetică\n• Intermediere vânzare/cumpărare parcuri operaționale, proiecte ready-to-build și greenfield\n\nSEWCELS oferă o abordare personalizată, adaptată fiecărui profil de investitor — local sau internațional.",
-        en: "Complete consulting for energy optimization, renewable generation (PV + BESS), project brokerage, and ANRE licensing.\n\n• On-grid / off-grid PV project support\n• BESS storage systems and hybrid integration\n• Specialized documentation for Distribution Operators\n• Documentation and acquisition of ANRE certifications for economic operators\n• Structuring and negotiation of PPA contracts\n• Prosumers advisory (residential & industrial clients)\n• Energy audits and efficiency simulations\n• Intermediation of operational parks, ready-to-build and greenfield projects\n\nSEWCELS provides a tailored approach adapted to each investor profile — local or international."
+        ro: "Consultanță completă pentru optimizarea consumului energetic, soluții de producție regenerabilă (PV + BESS), intermediere de proiecte și avizare ANRE.\n\n• Proiecte fotovoltaice on-grid / off-grid\n• Sisteme de stocare (BESS) și integrare hibridă\n• Documentații de specialitate în relația cu Operatorii de Distribuție\n• Documentație și obținere atestate ANRE operatori economici\n• Structurare și negociere PPA (Power Purchase Agreements)\n• Consultanță pentru prosumatori (clienți casnici sau industriali)\n• Audit energetic și simulări de eficiență energetică\n• Intermediere vânzare/cumpărare parcuri operaționale, proiecte ready-to-build și greenfield\n\nApexor oferă o abordare personalizată, adaptată fiecărui profil de investitor — local sau internațional.",
+        en: "Complete consulting for energy optimization, renewable generation (PV + BESS), project brokerage, and ANRE licensing.\n\n• On-grid / off-grid PV project support\n• BESS storage systems and hybrid integration\n• Specialized documentation for Distribution Operators\n• Documentation and acquisition of ANRE certifications for economic operators\n• Structuring and negotiation of PPA contracts\n• Prosumers advisory (residential & industrial clients)\n• Energy audits and efficiency simulations\n• Intermediation of operational parks, ready-to-build and greenfield projects\n\nApexor provides a tailored approach adapted to each investor profile — local or international."
       }
     },
     {
@@ -183,16 +183,16 @@ export default function Services() {
   return (
     <div className="bg-white text-gray-800 py-12 px-6 md:px-16">
       <Head>
-        <title>{locale === 'ro' ? 'Servicii SEWCELS - Consultanță, energie și finanțare' : 'SEWCELS Services - Consulting, Energy & Funding'}</title>
+        <title>{locale === 'ro' ? 'Servicii Apexor - Consultanță, energie și finanțare' : 'Apexor Services - Consulting, Energy & Funding'}</title>
         <meta
           name="description"
           content={
             locale === 'ro'
-              ? 'Gama completă de servicii SEWCELS: eficiență energetică, fonduri nerambursabile, achiziții publice și intermediere financiară.'
-              : 'SEWCELS full service offering: energy efficiency, grants, public procurement and financial intermediation.'
+              ? 'Gama completă de servicii Apexor: eficiență energetică, fonduri nerambursabile, achiziții publice și intermediere financiară.'
+              : 'Apexor full service offering: energy efficiency, grants, public procurement and financial intermediation.'
           }
         />
-        <meta property="og:title" content="SEWCELS - Servicii" />
+        <meta property="og:title" content="Apexor - Servicii" />
         <meta
           property="og:description"
           content={
@@ -205,7 +205,7 @@ export default function Services() {
         <meta name="robots" content="index, follow" />
         <link
           rel="canonical"
-          href={`https://sewcels.ro/${locale === 'ro' ? 'ro' : 'en'}/services`}
+          href={`https://apexor.ro/${locale === 'ro' ? 'ro' : 'en'}/services`}
         />
       </Head>
       <h1 className="text-4xl font-bold text-blue-900 text-center mb-4">

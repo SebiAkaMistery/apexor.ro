@@ -3,4 +3,4 @@ Disallow: /_next/
 Disallow: /api/
 Disallow: /*.vercel.app/
 
-Sitemap: https://sewcels.ro/sitemap.xml
+Sitemap: https://apexor.ro/sitemap.xml

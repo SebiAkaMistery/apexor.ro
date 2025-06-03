@@ -48,7 +48,7 @@ export default function Footer() {
           <p className="mb-1">Oradea, Bihor</p>
           <p className="mb-1">CUI: RO4042319</p>
           <p className="mb-1">
-            <a href="mailto:office@sewcels.ro" className="hover:text-green-400 transition">office@sewcels.ro</a>
+            <a href="mailto:office@apexor.ro" className="hover:text-green-400 transition">office@apexor.ro</a>
           </p>
         </div>
 
@@ -108,7 +108,7 @@ export default function Footer() {
 
       </div>
       <div className="text-center text-xs text-gray-500 mt-10">
-        &copy; {new Date().getFullYear()} SEWCELS S.R.L. – {locale === 'ro' ? 'Toate drepturile rezervate.' : 'All rights reserved.'}
+        &copy; {new Date().getFullYear()} Apexor S.R.L. – {locale === 'ro' ? 'Toate drepturile rezervate.' : 'All rights reserved.'}
       </div>
     </footer>
   );

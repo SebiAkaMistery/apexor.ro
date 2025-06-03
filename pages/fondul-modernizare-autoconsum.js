@@ -376,7 +376,7 @@ function customStorageRoundup(value) {
             "@context": "https://schema.org",
             "@type": "WebPage",
             "name": "Fondul pentru Modernizare - Surse regenerabile și stocare pentru autoconsum",
-            "url": "https://www.sewcels.ro/fondul-modernizare-autoconsum",
+            "url": "https://www.apexor.ro/fondul-modernizare-autoconsum",
             "description": "Sprijin pentru investiții în capacități noi de producere a energiei regenerabile și stocare pentru autoconsum, prin Fondul pentru Modernizare.",
             "inLanguage": "ro",
             "breadcrumb": {
@@ -386,13 +386,13 @@ function customStorageRoundup(value) {
                   "@type": "ListItem",
                   "position": 1,
                   "name": "Acasă",
-                  "item": "https://www.sewcels.ro"
+                  "item": "https://www.apexor.ro"
                 },
                 {
                   "@type": "ListItem",
                   "position": 2,
                   "name": "Fondul pentru Modernizare - Autoconsum",
-                  "item": "https://www.sewcels.ro/fondul-modernizare-autoconsum"
+                  "item": "https://www.apexor.ro/fondul-modernizare-autoconsum"
                 }
               ]
             },

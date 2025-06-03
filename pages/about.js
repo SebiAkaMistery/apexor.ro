@@ -15,16 +15,16 @@ export default function About() {
   return (
     <div className="bg-white text-gray-800 py-12 px-6 md:px-20">
       <Head>
-        <title>{locale === 'ro' ? 'Despre SEWCELS - Expertiză în energie și consultanță' : 'About SEWCELS - Expertise in Energy and Consulting'}</title>
+        <title>{locale === 'ro' ? 'Despre Apexor - Expertiză în energie și consultanță' : 'About Apexor - Expertise in Energy and Consulting'}</title>
         <meta
           name="description"
           content={
             locale === 'ro'
-              ? 'Află cine suntem și cum oferim soluții strategice pentru tranziția verde și digitală. SEWCELS – partenerul tău în proiecte sustenabile.'
-              : 'Discover who we are and how we deliver strategic solutions for the green and digital transition. SEWCELS – your partner in sustainable projects.'
+              ? 'Află cine suntem și cum oferim soluții strategice pentru tranziția verde și digitală. Apexor – partenerul tău în proiecte sustenabile.'
+              : 'Discover who we are and how we deliver strategic solutions for the green and digital transition. Apexor – your partner in sustainable projects.'
           }
         />
-        <meta property="og:title" content="SEWCELS - Despre noi" />
+        <meta property="og:title" content="Apexor - Despre noi" />
         <meta
           property="og:description"
           content={
@@ -36,12 +36,12 @@ export default function About() {
         <meta property="og:image" content="/og-image.jpg" />
         <meta name="robots" content="index, follow" />
         {/* Canonical and robots meta for Vercel preview */}
-        <link rel="canonical" href={`https://sewcels.ro${locale === 'en' ? '/en/about' : '/ro/about'}`} />
+        <link rel="canonical" href={`https://apexor.ro${locale === 'en' ? '/en/about' : '/ro/about'}`} />
         {typeof window !== 'undefined' && window.location.hostname.includes('vercel.app') && (
           <meta name="robots" content="noindex, nofollow" />
         )}
       </Head>
-           {/* Secțiune compactă – Prezentare SEWCELS pe imagine cu gradient */}
+           {/* Secțiune compactă – Prezentare Apexor pe imagine cu gradient */}
       <div className="relative mb-4 h-[380px] rounded-xl overflow-hidden shadow-lg">
         <Image
           src="/images/about-top.webp"
@@ -60,8 +60,8 @@ export default function About() {
         >
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4 drop-shadow max-w-full break-words text-center w-full">
             {locale === 'ro'
-              ? 'SEWCELS - Consultanță strategică pentru o economie sustenabilă'
-              : 'SEWCELS - Strategic Consulting for a Sustainable Economy'}
+              ? 'Apexor - Consultanță strategică pentru o economie sustenabilă'
+              : 'Apexor - Strategic Consulting for a Sustainable Economy'}
           </h2>
           <div className="text-white w-full max-w-full sm:max-w-[90%] lg:max-w-[60%] xl:max-w-[45%] break-words">
             <p className="text-xs sm:text-sm md:text-base leading-relaxed text-justify drop-shadow max-w-full break-words">
@@ -215,7 +215,7 @@ export default function About() {
         <div className="absolute inset-0 z-0">
           <Image
             src="/images/about-illustration.webp"
-            alt={locale === 'ro' ? 'Fundal SEWCELS' : 'SEWCELS background'}
+            alt={locale === 'ro' ? 'Fundal Apexor' : 'Apexor background'}
             layout="responsive"
             width={1200}
             height={800}

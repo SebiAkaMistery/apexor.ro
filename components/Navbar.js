@@ -46,8 +46,8 @@ export default function Navbar() {
         {/* LOGO */}
         <Link href="/" className="shrink-0 mr-10">
           <Image
-            src={scrolled ? '/logo-sewcels-white.webp' : '/logo-sewcels.webp'}
-            alt="Sewcels Logo"
+            src={scrolled ? '/logo-apexor-white.webp' : '/logo-apexor.webp'}
+            alt="Apexor Logo"
             width={120}
             height={40}
             priority
@@ -260,7 +260,7 @@ export function Footer() {
     <footer className="bg-[#1f2937] text-white py-8 px-4 mt-12">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between text-sm gap-4">
         <div className="text-center md:text-left">
-          <p className="font-medium">SEWCELS S.R.L.</p>
+          <p className="font-medium">Apexor S.R.L.</p>
           <p>&copy; {year} Toate drepturile rezervate.</p>
         </div>
         <div className="flex space-x-4">

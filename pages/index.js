@@ -25,8 +25,8 @@ export default function Home() {
       <Head>
         <title>
           {locale === 'ro'
-            ? 'SEWCELS - Soluții inovatoare pentru un viitor sustenabil'
-            : 'SEWCELS - Innovative Solutions for a Sustainable Future'}
+            ? 'Apexor - Soluții inovatoare pentru un viitor sustenabil'
+            : 'Apexor - Innovative Solutions for a Sustainable Future'}
         </title>
         <meta
           name="description"
@@ -36,7 +36,7 @@ export default function Home() {
               : 'Innovative solutions in energy, research and development to support the transition to a sustainable future.'
           }
         />
-        <meta property="og:title" content="SEWCELS" />
+        <meta property="og:title" content="Apexor" />
         <meta
           property="og:description"
           content={
@@ -47,7 +47,7 @@ export default function Home() {
         />
         <meta property="og:image" content="/og-image.jpg" />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://sewcels.ro/" />
+        <link rel="canonical" href="https://apexor.ro/" />
       </Head>
       <motion.div
         className="w-full px-4 sm:px-6 lg:px-8"
@@ -77,7 +77,7 @@ export default function Home() {
         >
           <Image
             src="/favicon-white.webp"
-            alt="SEWCELS logo"
+            alt="Apexor logo"
             width={200}
             height={200}
             className="w-[50vw] max-w-[200px] h-auto mb-24 sm:mb-48 lg:mb-64 object-contain"

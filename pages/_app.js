@@ -43,7 +43,7 @@ function MyApp({ Component, pageProps }) {
           <meta charSet="utf-8" />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <meta name="robots" content="index, follow" />
-          <link rel="canonical" href={`https://sewcels.ro${router.asPath}`} />
+          <link rel="canonical" href={`https://apexor.ro${router.asPath}`} />
           <link rel="icon" href="/favicon.ico" type="image/x-icon" />
 
           {/* Google Ads Conversion Tracking */}

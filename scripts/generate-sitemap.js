@@ -9,7 +9,7 @@ const { globby } = require('globby');
   ]);
 
   const locales = ['ro', 'en'];
-  const domain = 'https://sewcels.ro';
+  const domain = 'https://apexor.ro';
 
   const sitemapEntries = pages
     .filter((page) => !page.includes('[...'))

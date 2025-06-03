@@ -23,8 +23,8 @@ export default async function handler(req, res) {
   });
 
     await transporter.sendMail({
-      from: `"SEWCELS Contact" <${process.env.SMTP_USER}>`,
-      to: 'office@sewcels.ro',
+      from: `"Apexor Contact" <${process.env.SMTP_USER}>`,
+      to: 'office@apexor.ro',
       subject: `Cerere nouă de la ${name} (${company})`,
       html: `
         <h2>Formular Contact</h2>

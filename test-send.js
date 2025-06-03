@@ -12,7 +12,7 @@ const transporter = nodemailer.createTransport({
 });
 
 transporter.sendMail({
-  from: '"Sewcels Contact" <office@sewcels.ro>',
+  from: '"Apexor Contact" <office@sewcels.ro>',
   to: "office@sewcels.ro",
   subject: "Test Email",
   text: "Merge trimiterea din script?",
