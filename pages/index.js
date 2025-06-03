@@ -80,7 +80,7 @@ export default function Home() {
             alt="Apexor logo"
             width={200}
             height={200}
-            className="w-[50vw] max-w-[200px] h-auto mb-24 sm:mb-48 lg:mb-64 object-contain"
+            className="w-[50vw] max-w-[300px] h-auto mb-24 sm:mb-48 lg:mb-64 object-contain"
             priority
           />
           <h1 className="text-2xl md:text-4xl font-bold mb-4 text-white max-w-xl">
