@@ -4,7 +4,7 @@
     "/ro/politica-confidentialitate": {
       "initialRevalidateSeconds": false,
       "srcRoute": null,
-      "dataRoute": "/_next/data/uYMk9pZwg6wiRBQkw6HQ-/politica-confidentialitate.json",
+      "dataRoute": "/_next/data/wCutmNCb14OL1BTiMkEGb/politica-confidentialitate.json",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -17,7 +17,7 @@
     "/en/politica-confidentialitate": {
       "initialRevalidateSeconds": false,
       "srcRoute": null,
-      "dataRoute": "/_next/data/uYMk9pZwg6wiRBQkw6HQ-/politica-confidentialitate.json",
+      "dataRoute": "/_next/data/wCutmNCb14OL1BTiMkEGb/politica-confidentialitate.json",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -31,8 +31,8 @@
   "dynamicRoutes": {},
   "notFoundRoutes": [],
   "preview": {
-    "previewModeId": "c938dfbd3fedc62d0ecc615b034160dc",
-    "previewModeSigningKey": "ad3388f88b892684e6136cc21d3a0f1e9e52c013cedb058c24028d1f36885555",
-    "previewModeEncryptionKey": "000e57ba02f3045bd149d32fd165fe51a39a99ccd5d406035d082939707b4201"
+    "previewModeId": "14e405b291abacad3c2ef544354b08c8",
+    "previewModeSigningKey": "d25a8f384ab0d31dd8c54ace475768d49c4e813d3a8c71ed84058a5f4df1761c",
+    "previewModeEncryptionKey": "2e079f6130fa2395fdd8da6b1459b159b24988fc3e11d711370eccad114179c0"
   }
 }

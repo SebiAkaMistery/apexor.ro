@@ -7,7 +7,7 @@ module.exports = withBundleAnalyzer({
   i18n,
   reactStrictMode: true,
   experimental: {
-    optimizePackageImports: true,
+    optimizePackageImports: [],
   },
   async headers() {
     return [
