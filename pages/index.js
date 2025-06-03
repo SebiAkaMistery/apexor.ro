@@ -76,7 +76,7 @@ export default function Home() {
           transition={{ delay: 0.5, duration: 1 }}
         >
           <Image
-            src="/public/logo-apexor-white.webp"
+            src="/favicon-white.webp"
             alt="Apexor logo"
             width={200}
             height={200}
