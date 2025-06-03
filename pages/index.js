@@ -2,7 +2,7 @@ import Layout from '../components/Layout';
 import { useTranslation } from 'next-i18next';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 import Navbar from '../components/Navbar';
@@ -11,15 +11,7 @@ import Footer from '../components/footer';
 
 export default function Home() {
   const { t, i18n } = useTranslation('common');
-  const [showContent, setShowContent] = useState(false);
   const { locale } = useRouter();
-
-useEffect(() => {
-  setShowContent(true);
-}, []);
-  
-  useEffect(() => {
-    }, [i18n.language]);
 
   return (
     <Layout>
@@ -54,7 +46,7 @@ useEffect(() => {
         <motion.div
           className="w-full px-4 sm:px-6 lg:px-8"
           initial={{ y: -80, opacity: 0 }}
-          animate={showContent ? { y: 0, opacity: 1 } : {}}
+          animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.6 }}
         >
           <Navbar />
@@ -90,7 +82,7 @@ useEffect(() => {
           <motion.div
             className="mt-10"
             initial={{ opacity: 0, y: 20 }}
-            animate={showContent ? { opacity: 1, y: 0 } : {}}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4, duration: 0.6 }}
           >
             <Link
