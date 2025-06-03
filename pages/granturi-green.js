@@ -11,11 +11,11 @@ export default function GranturiGreen() {
   return (
     <>
       <Head>
-        <title>SEWCELS - Granturi Green</title>
-        <meta name="description" content="Informații despre granturi nerambursabile și ajutoare de stat pentru investiții sustenabile. Consultanță și sprijin profesional oferit de SEWCELS." />
-        <link rel="canonical" href="https://sewcels.ro/granturi-green" />
+        <title>Apexor - Granturi Green</title>
+        <meta name="description" content="Informații despre granturi nerambursabile și ajutoare de stat pentru investiții sustenabile. Consultanță și sprijin profesional oferit de Apexor." />
+        <link rel="canonical" href="https://apexor.ro/granturi-green" />
         <meta name="googlebot" content="index,follow" />
-        <meta property="og:url" content="https://sewcels.ro/granturi-green" />
+        <meta property="og:url" content="https://apexor.ro/granturi-green" />
         <meta name="lastmod" content="2025-05-23" />
       </Head>
       <div className="bg-white text-gray-800 py-12 px-6 md:px-16">

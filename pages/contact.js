@@ -13,16 +13,16 @@ export default function Contact() {
   // Place near the top of returned JSX
   const seoHead = (
     <Head>
-      <title>{locale === 'ro' ? 'Contact SEWCELS - Hai să discutăm' : 'Contact SEWCELS - Let’s Connect'}</title>
+      <title>{locale === 'ro' ? 'Contact Apexor - Hai să discutăm' : 'Contact Apexor - Let’s Connect'}</title>
       <meta
         name="description"
         content={
           locale === 'ro'
-            ? 'Contactează echipa SEWCELS pentru detalii despre proiectele tale, colaborări sau consultanță. Îți răspundem rapid și eficient.'
-            : 'Get in touch with SEWCELS for project details, collaboration or consulting. We’ll get back to you promptly and efficiently.'
+            ? 'Contactează echipa Apexor pentru detalii despre proiectele tale, colaborări sau consultanță. Îți răspundem rapid și eficient.'
+            : 'Get in touch with Apexor for project details, collaboration or consulting. We’ll get back to you promptly and efficiently.'
         }
       />
-      <meta property="og:title" content="SEWCELS - Contact" />
+      <meta property="og:title" content="Apexor - Contact" />
       <meta
         property="og:description"
         content={
@@ -33,7 +33,7 @@ export default function Contact() {
       />
       <meta property="og:image" content="/og-image.jpg" />
       <meta name="robots" content="index, follow" />
-      <link rel="canonical" href="https://sewcels.ro/contact" />
+      <link rel="canonical" href="https://apexor.ro/contact" />
       <meta name="googlebot" content="noindex" />
     </Head>
   );
@@ -105,10 +105,10 @@ export default function Contact() {
               <div className="my-4 h-[2px] w-full bg-gradient-to-r from-[rgba(24,130,128,0.9)] to-[rgba(110,186,77,0.6)]" />
               <div>
                 <h3 className="text-blue-900 font-semibold text-base">{locale === 'ro' ? 'Contact' : 'Contact'}</h3>
-                <p>SEWCELS S.R.L.<br />Oradea, Str. Bicazului, Nr. 6, Bihor</p>
+                <p>Apexor S.R.L.<br />Oradea, Str. Bicazului, Nr. 6, Bihor</p>
                 <p>
                   <a href="tel:+40743634236" className="text-blue-700 hover:underline hover:text-blue-900 transition">Mob. +40743.634.236</a><br />
-                  <a href="mailto:office@sewcels.ro" className="text-blue-700 hover:underline hover:text-blue-900 transition">office@sewcels.ro</a>
+                  <a href="mailto:office@apexor.ro" className="text-blue-700 hover:underline hover:text-blue-900 transition">office@apexor.ro</a>
                 </p>
               </div>
             </div>

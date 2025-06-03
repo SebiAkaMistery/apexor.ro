@@ -15,7 +15,7 @@ export default function Footer() {
           <a href="/">
             <Image
               src="/favicon-white.webp"
-              alt="Sewcels Icon"
+              alt="Apexor Icon"
               width={120}
               height={120}
               className="mb-4"
@@ -44,7 +44,7 @@ export default function Footer() {
           <h4 className="text-white font-semibold mb-3">
             {locale === 'ro' ? 'Contact' : 'Contact'}
           </h4>
-          <p className="mb-1">{locale === 'ro' ? 'SEWCELS S.R.L.' : 'SEWCELS Ltd.'}</p>
+          <p className="mb-1">{locale === 'ro' ? 'Apexor S.R.L.' : 'Apexor Ltd.'}</p>
           <p className="mb-1">Oradea, Bihor</p>
           <p className="mb-1">CUI: RO4042319</p>
           <p className="mb-1">
