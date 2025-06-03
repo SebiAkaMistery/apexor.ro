@@ -40,6 +40,12 @@
       "namedRegex": "^/about(?:/)?$"
     },
     {
+      "page": "/blog",
+      "regex": "^/blog(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/blog(?:/)?$"
+    },
+    {
       "page": "/contact",
       "regex": "^/contact(?:/)?$",
       "routeKeys": {},
@@ -79,27 +85,27 @@
   "dataRoutes": [
     {
       "page": "/",
-      "dataRouteRegex": "^/_next/data/wCutmNCb14OL1BTiMkEGb/index\\.json$"
+      "dataRouteRegex": "^/_next/data/Cq6x_jPPLO9yDk\\-uHdt7X/index\\.json$"
     },
     {
       "page": "/about",
-      "dataRouteRegex": "^/_next/data/wCutmNCb14OL1BTiMkEGb/about\\.json$"
+      "dataRouteRegex": "^/_next/data/Cq6x_jPPLO9yDk\\-uHdt7X/about\\.json$"
     },
     {
       "page": "/contact",
-      "dataRouteRegex": "^/_next/data/wCutmNCb14OL1BTiMkEGb/contact\\.json$"
+      "dataRouteRegex": "^/_next/data/Cq6x_jPPLO9yDk\\-uHdt7X/contact\\.json$"
     },
     {
       "page": "/granturi-green",
-      "dataRouteRegex": "^/_next/data/wCutmNCb14OL1BTiMkEGb/granturi-green\\.json$"
+      "dataRouteRegex": "^/_next/data/Cq6x_jPPLO9yDk\\-uHdt7X/granturi-green\\.json$"
     },
     {
       "page": "/politica-confidentialitate",
-      "dataRouteRegex": "^/_next/data/wCutmNCb14OL1BTiMkEGb/politica-confidentialitate\\.json$"
+      "dataRouteRegex": "^/_next/data/Cq6x_jPPLO9yDk\\-uHdt7X/politica-confidentialitate\\.json$"
     },
     {
       "page": "/services",
-      "dataRouteRegex": "^/_next/data/wCutmNCb14OL1BTiMkEGb/services\\.json$"
+      "dataRouteRegex": "^/_next/data/Cq6x_jPPLO9yDk\\-uHdt7X/services\\.json$"
     }
   ],
   "i18n": {

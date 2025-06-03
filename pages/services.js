@@ -184,30 +184,17 @@ export default function Services() {
   return (
     <div className="bg-white text-gray-800 py-12 px-6 md:px-16">
       <Head>
-        <title>{locale === 'ro' ? 'Servicii Apexor - Consultanță, energie și finanțare' : 'Apexor Services - Consulting, Energy & Funding'}</title>
-        <meta
-          name="description"
-          content={
-            locale === 'ro'
-              ? 'Gama completă de servicii Apexor: eficiență energetică, fonduri nerambursabile, achiziții publice și intermediere financiară.'
-              : 'Apexor full service offering: energy efficiency, grants, public procurement and financial intermediation.'
-          }
-        />
-        <meta property="og:title" content="Apexor - Servicii" />
-        <meta
-          property="og:description"
-          content={
-            locale === 'ro'
-              ? 'Soluții personalizate pentru proiecte verzi și sustenabile, adaptate nevoilor fiecărui client.'
-              : 'Tailored solutions for green and sustainable projects, adapted to each client’s needs.'
-          }
-        />
-        <meta property="og:image" content="/og-image.jpg" />
-        <meta name="robots" content="index, follow" />
-        <link
-          rel="canonical"
-          href={`https://apexor.ro/${locale === 'ro' ? 'ro' : 'en'}/services`}
-        />
+        <title>Consultanță Fonduri, Sisteme Fotovoltaice, Finanțări - APEXOR</title>
+        <meta name="description" content="Consultanță completă pentru proiecte cu fonduri europene, soluții fotovoltaice la cheie și intermediere financiară. Expertiză în proiectare, execuție și mentenanță pentru sectorul energetic și cercetare." />
+        <meta property="og:title" content="Consultanță Energetică & Fonduri - APEXOR" />
+        <meta property="og:description" content="Accesează servicii integrate: consultanță fonduri, soluții fotovoltaice, intermediere financiară. Expertiză completă pentru companii și instituții." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.apexor.ro/services" />
+        <meta property="og:image" content="https://www.apexor.ro/logo-dark.png" />
+
+        <link rel="alternate" hreflang="ro" href="https://www.apexor.ro/services" />
+        <link rel="alternate" hreflang="en" href="https://www.apexor.ro/en/services" />
+        <link rel="canonical" href="https://www.apexor.ro/services" />
       </Head>
       <h1 className="text-4xl font-bold text-blue-900 text-center mb-4">
         {locale === 'ro' ? 'Serviciile Noastre' : 'Our Services'}

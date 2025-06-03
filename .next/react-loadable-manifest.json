@@ -3,8 +3,8 @@
     "id": 703,
     "files": [
       "static/chunks/230-b852f03527cb04c2.js",
-      "static/chunks/624-8931dba8a5e70edb.js",
-      "static/chunks/703-b7a72bbff0f92fed.js"
+      "static/chunks/624-4c419bb19f7a4cf3.js",
+      "static/chunks/703-a59227754ca77e79.js"
     ]
   },
   "pages/_app.js -> ../components/Layout": {
@@ -23,7 +23,7 @@
   "pages/index.js -> framer-motion": {
     "id": 5657,
     "files": [
-      "static/chunks/657.62f2387260b74d3b.js"
+      "static/chunks/657.845ad69516943151.js"
     ]
   }
 }

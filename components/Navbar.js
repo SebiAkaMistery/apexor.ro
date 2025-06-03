@@ -161,6 +161,14 @@ export default function Navbar() {
                   </span>
                 </Link>
               </li>
+              <li className="group">
+                <Link href="/blog">
+                  <span className={`relative transition-transform ease-in-out duration-300 hover:scale-[1.5] hover:-translate-y-[2px] ${scrolled ? 'hover:text-lime-300' : 'hover:text-green-700'}`}>
+                    <span className="relative z-10">{locale === 'ro' ? 'Blog' : 'Blog'}</span>
+                    <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-gradient-to-r from-green-700 via-green-500 to-lime-400 transition-all duration-300 group-hover:w-full"></span>
+                  </span>
+                </Link>
+              </li>
             </ul>
           </div>
           <div className="hidden md:flex items-center justify-end ml-10">
@@ -231,6 +239,7 @@ export default function Navbar() {
                 )}
               </div>
               <Link href="/contact"><div onClick={() => setMenuOpen(false)}>{locale === 'ro' ? 'Contact' : 'Contact'}</div></Link>
+              <Link href="/blog"><div onClick={() => setMenuOpen(false)}>{locale === 'ro' ? 'Blog' : 'Blog'}</div></Link>
               <button
                 onClick={() => {
                   setMenuOpen(false);

@@ -1,6 +1,9 @@
+# *
 User-agent: *
-Disallow: /_next/
-Disallow: /api/
-Disallow: /*.vercel.app/
+Allow: /
 
-Sitemap: https://apexor.ro/sitemap.xml
+# Host
+Host: https://www.apexor.ro
+
+# Sitemaps
+Sitemap: https://www.apexor.ro/sitemap.xml

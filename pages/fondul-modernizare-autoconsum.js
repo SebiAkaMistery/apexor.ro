@@ -357,18 +357,10 @@ function customStorageRoundup(value) {
   return (
     <>
       <Head>
-        <title>
-          {locale === 'ro'
-            ? 'Fondul pentru Modernizare Autoconsum | Calculatoare și Informații Oficiale 2025'
-            : 'Modernization Fund Self-Consumption | Official Calculators and Info 2025'}
-        </title>
+        <title>Fondul pentru Modernizare 2025 - Ghid Finanțare Autoconsum</title>
         <meta
           name="description"
-          content={
-            locale === 'ro'
-              ? 'Află cum să accesezi Fondul pentru Modernizare pentru proiecte de autoconsum. Utilizează calculatoare interactive pentru estimări, vezi condițiile de eligibilitate și bugetul disponibil. Toate informațiile oficiale 2025, actualizate pentru afacerea ta.'
-              : 'Learn how to access the Modernization Fund for self-consumption projects. Use interactive calculators for estimates, view eligibility criteria and available budget. All official 2025 info updated for your business.'
-          }
+          content="Consultanță completă pentru accesarea finanțărilor din Fondul pentru Modernizare 2025 - Autoconsum, panouri fotovoltaice și stocare energie."
         />
         <script
           type="application/ld+json"
@@ -444,6 +436,7 @@ function customStorageRoundup(value) {
         <noscript>
           <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
         </noscript>
+        <link rel="alternate" hrefLang="en" href="https://www.apexor.ro/en/fondul-modernizare-autoconsum" />
       </Head>
       <div className="max-w-6xl mx-auto my-10">
         <div className="relative w-full aspect-video rounded-lg overflow-hidden shadow-lg">
