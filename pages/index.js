@@ -71,41 +71,36 @@ useEffect(() => {
             Your browser does not support the video tag.
           </video>
           <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-30 z-0" />
-        <motion.div
-          className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-6"
-          initial={{ opacity: 0, y: 40 }}
-          animate={showContent ? { opacity: 1, y: 0 } : {}}
-          transition={{ delay: 0.1, duration: 0.8 }}
-        >
-            <Image
-              src="/favicon-white.webp"
-              alt="Apexor logo"
-              width={180}
-              height={180}
-              priority
-              className="w-[35vw] max-w-[180px] h-auto mb-20 sm:mb-40 lg:mb-64 object-contain"
-            />
-            <h1 className="text-2xl md:text-4xl font-bold mb-4 text-white max-w-xl">
-              {t('home_title')}
-            </h1>
-            <hr className="w-[60%] max-w-xl border-t border-white opacity-50 mb-4 mx-auto" />
-            <p className="text-base md:text-lg max-w-xl text-white">
-              {t('home_description')}
-            </p>
-            <motion.div
-              className="mt-10"
-              initial={{ opacity: 0, y: 20 }}
-              animate={showContent ? { opacity: 1, y: 0 } : {}}
-              transition={{ delay: 0.4, duration: 0.6 }}
+        <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-6">
+          <Image
+            src="/favicon-white.webp"
+            alt="Apexor logo"
+            width={180}
+            height={180}
+            priority
+            className="w-[35vw] max-w-[180px] h-auto mb-20 sm:mb-40 lg:mb-64 object-contain"
+          />
+          <h1 className="text-2xl md:text-4xl font-bold mb-4 text-white max-w-xl">
+            {t('home_title')}
+          </h1>
+          <hr className="w-[60%] max-w-xl border-t border-white opacity-50 mb-4 mx-auto" />
+          <p className="text-base md:text-lg max-w-xl text-white">
+            {t('home_description')}
+          </p>
+          <motion.div
+            className="mt-10"
+            initial={{ opacity: 0, y: 20 }}
+            animate={showContent ? { opacity: 1, y: 0 } : {}}
+            transition={{ delay: 0.4, duration: 0.6 }}
+          >
+            <Link
+              href="/services"
+              className="inline-block font-semibold px-6 py-3 rounded-full border border-green-700 transition-colors duration-100 bg-white text-green-700 group hover:bg-[linear-gradient(90deg,_rgba(24,130,128,0.9)_0%,_rgba(24,130,128,0.9)_40%,_rgba(110,186,77,0.6)_100%)] hover:text-white"
             >
-              <Link
-                href="/services"
-                className="inline-block font-semibold px-6 py-3 rounded-full border border-green-700 transition-colors duration-100 bg-white text-green-700 group hover:bg-[linear-gradient(90deg,_rgba(24,130,128,0.9)_0%,_rgba(24,130,128,0.9)_40%,_rgba(110,186,77,0.6)_100%)] hover:text-white"
-              >
-                {t('homepage_services_cta', { defaultValue: 'Descoperă serviciile noastre' })}
-              </Link>
-            </motion.div>
+              {t('homepage_services_cta', { defaultValue: 'Descoperă serviciile noastre' })}
+            </Link>
           </motion.div>
+        </div>
         </div>
         {/* Oportunități de finanțare section */}
         <div className="max-w-6xl mx-auto mt-12 px-4 py-12">
