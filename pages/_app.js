@@ -5,10 +5,18 @@ import { useEffect } from 'react';
 const Layout = dynamic(() => import('../components/Layout'), { ssr: false });
 import { useRouter } from 'next/router';
 import Head from 'next/head';
-import { Inter } from 'next/font/google';
+import localFont from 'next/font/local';
 import ScrollIndicator from '../components/ScrollIndicator';
 
-const inter = Inter({ subsets: ['latin'], display: 'swap' });
+const inter = localFont({
+  src: [
+    { path: '../public/fonts/Inter-Regular.woff2', weight: '400', style: 'normal' },
+    { path: '../public/fonts/Inter-SemiBold.woff2', weight: '600', style: 'normal' },
+    { path: '../public/fonts/Inter-Bold.woff2', weight: '700', style: 'normal' },
+  ],
+  variable: '--font-inter',
+  display: 'swap',
+});
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
@@ -37,7 +45,7 @@ function MyApp({ Component, pageProps }) {
   }, []);
 
   return (
-    <div className={inter.className}>
+    <div className={inter.variable}>
       <>
         <Head>
           <meta charSet="utf-8" />
