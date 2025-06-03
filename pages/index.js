@@ -66,7 +66,7 @@ export default function Home() {
             Your browser does not support the video tag.
           </video>
           <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-30 z-0" />
-        <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-6">
+        <div className="relative z-10 flex flex-col items-center justify-center min-h-[100dvh] text-center text-white px-6 py-20">
           <Image
             src="/favicon-white.webp"
             alt="Apexor logo"
