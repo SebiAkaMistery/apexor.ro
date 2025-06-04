@@ -122,7 +122,7 @@ export default function Home() {
                     : 'Key instrument for the development and implementation of photovoltaic self-consumption systems.'}
                 </p>
                 <Link
-                  href="/fondul-modernizare-autoconsum"
+                  href="https://www.fonduldemodernizare.ro/"
                   className="mb-2 inline-block font-semibold px-10 py-5 rounded-full border border-green-700 text-white bg-transparent hover:bg-gradient-to-r hover:from-[rgba(24,130,128,0.9)] hover:to-[rgba(110,186,77,0.6)] hover:text-white transition-colors duration-300 text-xl"
                 >
                   {locale === 'ro' ? 'Vezi detalii' : 'View details'}
