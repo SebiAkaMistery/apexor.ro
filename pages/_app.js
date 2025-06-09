@@ -23,27 +23,6 @@ function MyApp({ Component, pageProps }) {
   const router = useRouter();
   const isHome = router.pathname === '/';
 
-  useEffect(() => {
-    function updateConsent() {
-      if (window.Cookiebot && window.Cookiebot.consents) {
-        window.gtag('consent', 'update', {
-          ad_storage: window.Cookiebot.consents.marketing ? 'granted' : 'denied',
-          analytics_storage: window.Cookiebot.consents.statistics ? 'granted' : 'denied',
-        });
-      }
-    }
-
-    window.addEventListener('CookiebotOnAccept', updateConsent);
-    window.addEventListener('CookiebotOnDecline', updateConsent);
-
-    // Aplică consimțământul curent la mount (în caz de reload pagina)
-    updateConsent();
-
-    return () => {
-      window.removeEventListener('CookiebotOnAccept', updateConsent);
-      window.removeEventListener('CookiebotOnDecline', updateConsent);
-    };
-  }, []);
 
   return (
     <div className={inter.variable}>
@@ -64,15 +43,6 @@ function MyApp({ Component, pageProps }) {
       'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
       })(window,document,'script','dataLayer','GTM-NXZTWS4T');`,
             }}
-          />
-          {/* Cookiebot Consent Banner */}
-          <Script
-            id="Cookiebot"
-            src="https://consent.cookiebot.com/uc.js"
-            data-cbid="8250585a-82df-461d-beee-12481911ff5f"
-            data-blockingmode="auto"
-            type="text/javascript"
-            strategy="lazyOnload"
           />
         </Head>
         {isHome ? (
