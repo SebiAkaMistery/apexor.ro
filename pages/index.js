@@ -6,10 +6,6 @@ import Head from 'next/head';
 import { useRouter } from 'next/router';
 import Navbar from '../components/Navbar';
 import Image from 'next/image';
-import dynamic from 'next/dynamic';
-const MotionDiv = dynamic(() =>
-  import('framer-motion').then(mod => mod.motion.div), { ssr: false }
-);
 
 export default function Home() {
   const { t, i18n } = useTranslation('common');
@@ -45,14 +41,9 @@ export default function Home() {
           <meta name="robots" content="index, follow" />
           <link rel="canonical" href="https://apexor.ro/" />
         </Head>
-        <MotionDiv
-          className="w-full px-4 sm:px-6 lg:px-8"
-          initial={{ y: -80, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.6 }}
-        >
+        <div className="w-full px-4 sm:px-6 lg:px-8">
           <Navbar />
-        </MotionDiv>
+        </div>
         <div className="relative min-h-[100dvh] overflow-hidden">
           <video
             className="absolute top-0 left-0 w-full h-full object-cover opacity-100"
@@ -79,22 +70,14 @@ export default function Home() {
             Apexor - Soluții inovatoare pentru un viitor sustenabil
           </h1>
           <hr className="w-[60%] max-w-xl border-t border-white opacity-50 mb-4 mx-auto" />
-          <p className="text-base md:text-lg max-w-xl text-white">
-            Soluții inovatoare în domeniul energiei, cercetării și dezvoltării pentru a sprijini tranziția către un viitor sustenabil.
-          </p>
-          <MotionDiv
-            className="mt-10"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.4, duration: 0.6 }}
-          >
+          <div className="mt-10">
             <Link
               href="/services"
               className="inline-block font-semibold px-6 py-3 rounded-full border border-green-700 transition-colors duration-100 bg-white text-green-700 group hover:bg-[linear-gradient(90deg,_rgba(24,130,128,0.9)_0%,_rgba(24,130,128,0.9)_40%,_rgba(110,186,77,0.6)_100%)] hover:text-white"
             >
               {t('homepage_services_cta', { defaultValue: 'Descoperă serviciile noastre' })}
             </Link>
-          </MotionDiv>
+          </div>
         </div>
         </div>
         {/* Oportunități de finanțare section */}
@@ -173,4 +156,3 @@ export async function getServerSideProps({ locale }) {
       ...(await serverSideTranslations(locale, ['common']))
     },
   };
-}
