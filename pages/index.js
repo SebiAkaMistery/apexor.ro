@@ -69,6 +69,12 @@ export default function Home() {
           <h1 className="text-2xl md:text-4xl font-bold mb-4 text-white max-w-xl">
             Apexor - Soluții inovatoare pentru un viitor sustenabil
           </h1>
+          <p className="text-base md:text-lg max-w-xl text-white">
+            {t('homepage_hero_subtitle', {
+              defaultValue:
+                'Soluții inovatoare în domeniul energiei, cercetării și dezvoltării pentru a sprijini tranziția către un viitor sustenabil.'
+            })}
+          </p>
           <hr className="w-[60%] max-w-xl border-t border-white opacity-50 mb-4 mx-auto" />
           <div className="mt-10">
             <Link
