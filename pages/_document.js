@@ -9,6 +9,8 @@ export default function Document() {
         <meta charSet="UTF-8" />
         <meta name="robots" content="index, follow" />
         {/* Canonical link can be set dynamically in each page */}
+        <meta name="cookie-consent" content="This site uses cookies to improve user experience. By continuing to browse, you accept our cookie policy." />
+        <link rel="prefetch" href="/politica-confidentialitate" as="document" />
         <Script
           id="gtm"
           strategy="lazyOnload"
