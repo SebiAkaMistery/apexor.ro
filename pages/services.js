@@ -22,17 +22,18 @@ export default function Services() {
   const [isContactOpen, setContactOpen] = useState(false);
   const [monthlyData, setMonthlyData] = useState(new Array(12).fill(0));
 
-  useEffect(() => {
-    const defaultMonthly = 10000;
-    const pv = Math.round(defaultMonthly / 100);
-    const annualProduction = pv * 1250;
-    const monthPcts = [4.16, 5.67, 8.85, 9.87, 10.77, 10.55, 10.98, 10.10, 8.18, 6.42, 4.29, 3.12];
-    const updatedData = monthPcts.map((pct) => Math.round(annualProduction * (pct / 100)));
-    setMonthlyData(updatedData);
+useEffect(() => {
+  const defaultMonthly = 10000;
+  const pv = Math.round(defaultMonthly / 100);
+  const annualProduction = pv * 1250;
+  const monthPcts = [4.16, 5.67, 8.85, 9.87, 10.77, 10.55, 10.98, 10.10, 8.18, 6.42, 4.29, 3.12];
+  const updatedData = monthPcts.map((pct) => Math.round(annualProduction * (pct / 100)));
+  setMonthlyData(updatedData);
 
-    // --- Also update all calculated values on initial load ---
-    // Only run if DOM is available (client-side)
-    if (typeof window !== 'undefined' && typeof document !== 'undefined') {
+  // --- Also update all calculated values on initial load ---
+  // Only run if DOM is available (client-side)
+  if (typeof window !== 'undefined' && typeof document !== 'undefined') {
+    setTimeout(() => {
       const selfPercent = 50;
       const buyPrice = 1;
       const sellPrice = 0.5;
@@ -65,8 +66,9 @@ export default function Services() {
       setText('injectedIncome', income.toLocaleString());
       setText('paybackPv', paybackPv);
       setText('paybackBess', paybackBess);
-    }
-  }, []);
+    }, 0);
+  }
+}, []);
 
   const services = [
     {
@@ -124,13 +126,22 @@ export default function Services() {
 
   // Recalculation function for profitability calculator
   function recalculate() {
+    // Defensive wrappers for DOM access
+    const getTextContent = (id) => {
+      const el = document.getElementById(id);
+      return el ? el.textContent : '';
+    };
     // Use displayed value, not slider value, for monthly
-    const value = document.getElementById('monthlyValue').textContent.replace(/\D/g, '');
+    const value = getTextContent('monthlyValue').replace(/\D/g, '');
     const pv = Math.round(value / 100);
     const storage = pv * 2;
 
-    document.getElementById('recommendedPv').textContent = pv;
-    document.getElementById('recommendedStorage').textContent = storage;
+    const setText = (id, value) => {
+      const el = document.getElementById(id);
+      if (el) el.textContent = value;
+    };
+    setText('recommendedPv', pv);
+    setText('recommendedStorage', storage);
 
     // Continuous pricing model
     let eurPerKwp, eurPerKwpBess;
@@ -149,11 +160,11 @@ export default function Services() {
     const pvCostEUR = pv * eurPerKwp;
     const bessCostEUR = pv * eurPerKwpBess;
     const annualProduction = pv * 1250;
-    const selfPercent = parseFloat(document.getElementById('selfValue').textContent) || 0;
+    const selfPercent = parseFloat(getTextContent('selfValue')) || 0;
     const selfConsumption = Math.round(annualProduction * selfPercent / 100);
     const surplus = annualProduction - selfConsumption;
-    const buyPrice = parseFloat(document.getElementById('buyPrice').textContent) || 0;
-    const sellPrice = parseFloat(document.getElementById('sellPrice').textContent) || 0;
+    const buyPrice = parseFloat(getTextContent('buyPrice')) || 0;
+    const sellPrice = parseFloat(getTextContent('sellPrice')) || 0;
     const saving = Math.round(selfConsumption * buyPrice);
     const income = Math.round(surplus * sellPrice);
     const totalPvIncome = saving + income;
@@ -161,19 +172,19 @@ export default function Services() {
     const paybackPv = totalPvIncome > 0 ? (pvCostEUR * 5 / totalPvIncome).toFixed(1) : 0;
     const paybackBess = storageIncome > 0 ? (bessCostEUR * 5 / storageIncome).toFixed(1) : 0;
 
-    document.getElementById('paybackPv').textContent = paybackPv;
-    document.getElementById('paybackBess').textContent = paybackBess;
-    document.getElementById('annualPVIncome').textContent = totalPvIncome.toLocaleString();
-    document.getElementById('annualStorageIncome').textContent = storageIncome.toLocaleString();
-    document.getElementById('selfConsumed').textContent = selfConsumption.toLocaleString();
-    document.getElementById('surplusEnergy').textContent = surplus.toLocaleString();
-    document.getElementById('annualProduction').textContent = annualProduction.toLocaleString();
-    document.getElementById('pvCostEur').textContent = pvCostEUR.toLocaleString();
-    document.getElementById('pvCostRon').textContent = (pvCostEUR * 5).toLocaleString();
-    document.getElementById('pvBessCostEur').textContent = bessCostEUR.toLocaleString();
-    document.getElementById('pvBessCostRon').textContent = (bessCostEUR * 5).toLocaleString();
-    document.getElementById('selfSaving').textContent = saving.toLocaleString();
-    document.getElementById('injectedIncome').textContent = income.toLocaleString();
+    setText('paybackPv', paybackPv);
+    setText('paybackBess', paybackBess);
+    setText('annualPVIncome', totalPvIncome.toLocaleString());
+    setText('annualStorageIncome', storageIncome.toLocaleString());
+    setText('selfConsumed', selfConsumption.toLocaleString());
+    setText('surplusEnergy', surplus.toLocaleString());
+    setText('annualProduction', annualProduction.toLocaleString());
+    setText('pvCostEur', pvCostEUR.toLocaleString());
+    setText('pvCostRon', (pvCostEUR * 5).toLocaleString());
+    setText('pvBessCostEur', bessCostEUR.toLocaleString());
+    setText('pvBessCostRon', (bessCostEUR * 5).toLocaleString());
+    setText('selfSaving', saving.toLocaleString());
+    setText('injectedIncome', income.toLocaleString());
     
     // Dynamically populate each month with its share of the annual production
     const monthPcts = [4.16, 5.67, 8.85, 9.87, 10.77, 10.55, 10.98, 10.10, 8.18, 6.42, 4.29, 3.12];
